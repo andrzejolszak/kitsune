@@ -201,7 +201,7 @@ namespace Kitsune
 
             using (Graphics g = Graphics.FromImage(ret))
             {
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
 
                 abc.RenderToFit(g, width, height);
@@ -297,7 +297,7 @@ namespace Kitsune
             Bitmap b = new Bitmap((int)s.Width, (int)s.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
             using (Graphics g = Graphics.FromImage(b))
             {
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
                 g.DrawString(text, textFont, Brushes.Beige, 0, 0);
             }

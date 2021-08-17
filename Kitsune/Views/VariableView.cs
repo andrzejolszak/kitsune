@@ -49,7 +49,7 @@ namespace Kitsune
             {
                 g.Clear(Color.Transparent);
 
-                g.FastSettings();
+                g.HighQuality();
 
                 abc.RenderToFit(g, middleWidth, middleHeight);
                 g.DrawString(_model.Name, textFont, Brushes.White, 2, 2);

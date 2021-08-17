@@ -418,7 +418,7 @@ namespace Kitsune
 
                 Bitmap b = new Bitmap(w, height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
                 Graphics g = Graphics.FromImage(b);
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
                 g.DrawString(p, boldFont, Brushes.White, 0, 0);
                 g.Dispose();

@@ -93,7 +93,7 @@ namespace Kitsune
             _cached = new Bitmap(width, height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
             using (Graphics g = Graphics.FromImage(_cached))
             {
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
                 int y = 0;
                 for (int i = 0; i < elements.Count; ++i)

@@ -110,8 +110,7 @@ namespace Kitsune
         {
             using (Graphics g = Graphics.FromImage(canvas))
             {
-                g.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor;
-                g.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighSpeed;
+                g.HighQuality();
 
                 //g.DrawImage(background, invalidated, invalidated, GraphicsUnit.Pixel);
                 g.FillRectangle(backgroundBrush, invalidated);

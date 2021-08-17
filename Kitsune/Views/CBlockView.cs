@@ -203,7 +203,7 @@ namespace Kitsune
             
             using (Graphics g = Graphics.FromImage(ret))
             {
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
                 int offSetIndex = 0;
                 
@@ -317,7 +317,7 @@ namespace Kitsune
             Bitmap ret = new Bitmap(a.A1.Width, height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
             using (Graphics g = Graphics.FromImage(ret))
             {
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
                 
                 g.DrawImageUnscaled(a.A1, 0, 0);
@@ -331,7 +331,7 @@ namespace Kitsune
             Bitmap ret = new Bitmap(width, abc.A.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
             using (Graphics g = Graphics.FromImage(ret))
             {
-                g.FastSettings();
+                g.HighQuality();
                 g.Clear(Color.Transparent);
 
                 g.DrawImageUnscaled(abc.A, 0, 0);

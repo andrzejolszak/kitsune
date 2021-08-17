@@ -187,6 +187,7 @@ namespace Kitsune
             Bitmap ret = new Bitmap(col+1, bmp.Height, System.Drawing.Imaging.PixelFormat.Format32bppPArgb);
         using (Graphics g = Graphics.FromImage(ret))
         {
+                g.HighQuality();
             g.DrawImageUnscaled(bmp, 0, 0);
         }
         return ret;
